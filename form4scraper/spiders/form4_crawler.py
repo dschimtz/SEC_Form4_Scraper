@@ -6,7 +6,7 @@ class QuotesSpider(scrapy.Spider):
 
     def start_requests(self):
         # Load in the CIKs used to locate a companie's filings
-        with open(r'.\form4scraper\Universe.csv', 'r') as f: 
+        with open(r'.\form4scraper\Example_Universe.csv', 'r') as f: 
             reader = csv.reader(f)
             urls = list(reader)
     
